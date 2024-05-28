@@ -361,65 +361,81 @@ a {
     display: inline-block;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
+/* Contenedor principal del mapa */
 #game-container {
-    margin: 0 10vh;
-    position: relative;
+    margin: 0 10vh; /* Margen horizontal */
+    position: relative; /* Posicionamiento relativo para permitir el posicionamiento absoluto de los hijos */
 }
 
+/* Estilo para las ventanas emergentes */
 .popup {
-    position: absolute;
-    background-color: white;
-    border: 1px solid rgb(24, 24, 24);
-    padding: 1rem;
-    display: none;
-    border-radius: 0.5rem;
-    width: 20rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor relativo */
+    background-color: white; /* Color de fondo */
+    border: 1px solid rgb(24, 24, 24); /* Borde */
+    padding: 1rem; /* Relleno */
+    display: none; /* Inicialmente oculto */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    width: 20rem; /* Ancho fijo */
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); /* Sombra alrededor de la ventana emergente */
 }
+
+/* Estilo para el título de las ventanas emergentes */
 .popup-title {
-    color: #753012; /* Change to your desired color */
-    margin-bottom: 5px;
+    color: #753012; /* Color del texto */
+    margin-bottom: 5px; /* Margen inferior */
 }
+
+/* Estilo para el texto de las ventanas emergentes */
 .popup-text {
-    color: rgb(48, 48, 48); /* Change to your desired text color */
+    color: rgb(48, 48, 48); /* Color del texto */
 }
+
+/* Estilo para el iframe del mapa */
 #map-iframe {
-    display: none;
-    margin: 0 8vh;
+    display: none; /* Inicialmente oculto */
+    margin: 0 8vh; 
 }
+
+/* Contenedor del mapa */
 .map-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.location-section {
-    text-align: center;
+    justify-content: center; 
+    align-items: center; /* Centrado vertical de los elementos */
 }
 
+/* Sección de ubicación */
+.location-section {
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Contenedor de ubicación */
 .location-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: center; 
+    gap: 20px; /* Espacio entre los elementos */
 }
 
+/* Estilo para cada ubicación */
 .location {
-    background-color: #E0E4DB;
+    background-color: #E0E4DB; 
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
+    border-radius: 8px; 
+    padding: 15px; 
     max-width: 300px;
     text-align: left;
 }
 
+/* Estilo para el título de cada ubicación */
 .location h3 {
-    margin-top: 0;
+    margin-top: 0; 
 }
 
+/* Estilo para la imagen de cada ubicación */
 .location-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
 }
 /* Estilos para tamaños de pantalla menores a 800px (teléfono celular vertical) */
 @media only screen and (max-width: 800px) {
